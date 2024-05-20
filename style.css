@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: blue;
+  background-image: url(./images/pexels-mccutcheon-1191710.jpg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(204, 204, 204, 0.5);
+    padding: 15px 25px;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+}
+.copy {
+    position: absolute;
+    bottom: 50px;
+}
+
+.sum:hover {
+    box-shadow: 0px 26px 71px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 460px) {
+    .container h1 {
+        font-size: 22px;
+    }
+}
